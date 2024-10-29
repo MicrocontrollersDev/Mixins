@@ -53,13 +53,13 @@ TODO: write this section
 Shifts have many practical use cases. Say we had the following code:
 
 ```java
-public void render(ResourceLocation guiTexture, ResourceLocation otherTexture) {
-    if (shouldRenderGui()) {
-        drawGuiTexture(guiTexture);
-    }
-    else if (shouldRenderOther()) {
-        drawOtherTexture(otherTexture)
-    }
+public void render(ResourceLocation guiTexture, ResourceLocation otherTexture, int x, int y) {
+    int a = x / 2;
+    int b = y / 2;
+    drawGuiTexture(guiTexture, a, b);
+    int c = a + 10;
+    int d = b + 10;
+    drawOtherTexture(otherTexture, c, d);
 }
 ```
 
@@ -80,14 +80,14 @@ private void drawGuiTexturePost() {
 This would result in the following code:
 
 ```java
-public void render(ResourceLocation guiTexture, ResourceLocation otherTexture) {
-    if (shouldRenderGui()) {
-        RenderSystem.setShaderColor(1f, 1f, 1f, 0.5f);
-        drawGuiTexture(guiTexture);
-        RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
-    }
-    else if (shouldRenderOther()) {
-        drawOtherTexture(otherTexture)
-    }
+public void render(ResourceLocation guiTexture, ResourceLocation otherTexture, int x, int y) {
+    int a = x / 2;
+    int b = y / 2;
+    RenderSystem.setShaderColor(1f, 1f, 1f, 0.5f);
+    drawGuiTexture(guiTexture);
+    RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
+    int c = a + 10;
+    int d = b + 10;
+    drawOtherTexture(otherTexture);
 }
 ```

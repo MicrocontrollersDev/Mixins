@@ -63,6 +63,7 @@ extra:
 nav:
   - "Mixin Start": "index.md"
   - "General":
+      - "General": "general/index.md"
       - "At": "general/at.md"
       - "Ordinal": "general/ordinal.md"
       - "Shift": "general/shift.md"
