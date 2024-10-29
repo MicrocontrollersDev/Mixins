@@ -62,7 +62,10 @@ extra:
 
 nav:
   - "Mixin Start": "index.md"
-  - "General Mixin Knowledge": "general.md"
+  - "At": "at.md"
+  - "Ordinal": "ordinal.md"
+  - "Shift": "shift.md"
+  - "Ducks": "duck.md"
   - "Default Injections":
       - "Default Injections": "default/index.md"
       - "Overwrite": "default/overwrite.md"
@@ -72,6 +75,8 @@ nav:
       - "ModifyArgs": "default/modifyargs.md"
       - "ModifyConstant": "default/modifyconstant.md"
       - "ModifyVariable": "default/modifyvariable.md"
+      - "Accessor": "default/accessor.md"
+      - "Invoker": "default/invoker.md"
   - "Mixin Extras":
       - "Mixin Extras": "mixinextras/index.md"
       - "ModifyExpressionValue": "mixinextras/modifyexpressionvalue.md"
