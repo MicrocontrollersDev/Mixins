@@ -2,7 +2,7 @@
 
 There are three types of Shifts: Before, After, and By.
 
-# After
+## After
 
 Mixin injections happen the line before a method is called. So, what do we do if we want to inject *after* a method call?
 
@@ -36,13 +36,13 @@ public void foo() {
 }
 ```
 
-# Before
+## Before
 
 Before is not recommended.
 
 TODO: write this section
 
-# By
+## By
 
 By is not recommended.
 
