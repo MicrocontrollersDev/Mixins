@@ -64,6 +64,7 @@ nav:
   - "Mixin Start": "docs/index.md"
   - "General Mixin Knowledge": "docs/general.md"
   - "Default Injections":
+      - "Default Injections": "docs/default/index.md"
       - "Overwrite": "docs/default/overwrite.md"
       - "Inject": "docs/default/inject.md"
       - "Redirect": "docs/default/redirect.md"
@@ -72,6 +73,7 @@ nav:
       - "ModifyConstant": "docs/default/modifyconstant.md"
       - "ModifyVariable": "docs/default/modifyvariable.md"
   - "Mixin Extras":
+      - "Mixin Extras": "docs/mixinextras/index.md"
       - "ModifyExpressionValue": "docs/mixinextras/modifyexpressionvalue.md"
       - "ModifyReceiver": "docs/mixinextras/modifyreceiver.md"
       - "ModifyReturnValue": "docs/mixinextras/modifyreturnvalue.md"
@@ -79,6 +81,7 @@ nav:
       - "WrapOperation": "docs/mixinextras/wrapoperation.md"
       - "WrapWithCondition": "docs/mixinextras/wrapwithcondition"
       - "Sugar":
+          - "Sugar": "docs/mixinextras/sugar/index.md"
           - "Cancellable": "docs/mixinextras/sugar/cancellable.md"
           - "Local": "docs/mixinextras/sugar/local.md"
           - "Share": "docs/mixinextras/sugar/share.md"
