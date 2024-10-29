@@ -36,7 +36,7 @@ theme:
 
 repo_name: Mixins
 repo_url: https://github.com/MicrocontrollersDev/Mixins
-edit_uri: ../Mixins/edit/main/docs/
+edit_uri: ../Mixins/edit/main/
 extra:
   social:
     - icon: simple/modrinth
@@ -61,30 +61,30 @@ extra:
       link: https://ko-fi.com/microcontrollers
 
 nav:
-  - "Mixin Start": "docs/index.md"
-  - "General Mixin Knowledge": "docs/general.md"
+  - "Mixin Start": "index.md"
+  - "General Mixin Knowledge": "general.md"
   - "Default Injections":
-      - "Default Injections": "docs/default/index.md"
-      - "Overwrite": "docs/default/overwrite.md"
-      - "Inject": "docs/default/inject.md"
-      - "Redirect": "docs/default/redirect.md"
-      - "ModifyArg": "docs/default/modifyarg.md"
-      - "ModifyArgs": "docs/default/modifyargs.md"
-      - "ModifyConstant": "docs/default/modifyconstant.md"
-      - "ModifyVariable": "docs/default/modifyvariable.md"
+      - "Default Injections": "default/index.md"
+      - "Overwrite": "default/overwrite.md"
+      - "Inject": "default/inject.md"
+      - "Redirect": "default/redirect.md"
+      - "ModifyArg": "default/modifyarg.md"
+      - "ModifyArgs": "default/modifyargs.md"
+      - "ModifyConstant": "default/modifyconstant.md"
+      - "ModifyVariable": "default/modifyvariable.md"
   - "Mixin Extras":
-      - "Mixin Extras": "docs/mixinextras/index.md"
-      - "ModifyExpressionValue": "docs/mixinextras/modifyexpressionvalue.md"
-      - "ModifyReceiver": "docs/mixinextras/modifyreceiver.md"
-      - "ModifyReturnValue": "docs/mixinextras/modifyreturnvalue.md"
-      - "WrapMethod": "docs/mixinextras/wrapmethod.md"
-      - "WrapOperation": "docs/mixinextras/wrapoperation.md"
-      - "WrapWithCondition": "docs/mixinextras/wrapwithcondition"
+      - "Mixin Extras": "mixinextras/index.md"
+      - "ModifyExpressionValue": "mixinextras/modifyexpressionvalue.md"
+      - "ModifyReceiver": "mixinextras/modifyreceiver.md"
+      - "ModifyReturnValue": "mixinextras/modifyreturnvalue.md"
+      - "WrapMethod": "mixinextras/wrapmethod.md"
+      - "WrapOperation": "mixinextras/wrapoperation.md"
+      - "WrapWithCondition": "mixinextras/wrapwithcondition"
       - "Sugar":
-          - "Sugar": "docs/mixinextras/sugar/index.md"
-          - "Cancellable": "docs/mixinextras/sugar/cancellable.md"
-          - "Local": "docs/mixinextras/sugar/local.md"
-          - "Share": "docs/mixinextras/sugar/share.md"
+          - "Sugar": "mixinextras/sugar/index.md"
+          - "Cancellable": "mixinextras/sugar/cancellable.md"
+          - "Local": "mixinextras/sugar/local.md"
+          - "Share": "mixinextras/sugar/share.md"
 
 markdown_extensions:
   - admonition
