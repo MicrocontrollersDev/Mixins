@@ -12,15 +12,15 @@ public void foo(float f) {
 }
 ```
 
-Let's say we wanted to change b and f to multipliplied by 2 instead. Since the variables are only used in the doSomething call, we can `ModifyArgs` the call:
+Let's say we wanted to change both b and f to be divided by 2 instead. Since the variables are only used in the doSomething call, we can `ModifyArgs` the call:
 
 ```java
 @ModifyArgs(method = "foo", at = @At(value = "INVOKE", target = "doSomething(Ljava/lang/String;IF)V"))
 private void changeMethodParams(Args args) {
     int b = args.get(1); // gets the 1st (0-indexed) variable
     float f = args.get(2); // gets the 2nd (0-indexed) variable
-    int newB = b * 2;
-    int newF = f * 2;
+    int newB = b / 2;
+    int newF = f / 2;
     args.set(1, newB); // sets the 1st (0-indexed) variable
     args.set(2, newF); // sets the 2nd (0-indexed) variable
     // this code can obviously be simplified down
