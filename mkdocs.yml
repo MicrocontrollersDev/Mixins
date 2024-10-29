@@ -65,6 +65,7 @@ nav:
   - "At": "at.md"
   - "Ordinal": "ordinal.md"
   - "Shift": "shift.md"
+  - "Slice": "slice.md"
   - "Ducks": "duck.md"
   - "Default Injections":
       - "Default Injections": "default/index.md"

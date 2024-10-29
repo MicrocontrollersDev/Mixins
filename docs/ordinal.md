@@ -31,3 +31,5 @@ public void foo() {
 ```
 
 Ordinals are 0-indexed, meaning the first instance of a method will have an ordinal of 0, the second will have an ordinal of 1, and so on.
+
+If you wish to target all instances of the method call, simply leave out the ordinal and mixin will target all of them. If you wish to target multiple but not all, you must either repeat the injection with each ordinal or use slices. TODO: create and link slices page
