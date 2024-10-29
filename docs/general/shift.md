@@ -31,7 +31,7 @@ This gives us the following code:
 public void foo() {
     doSomething1();
     doSomething2();
-+   doSomething3();
+    doSomething3();
     doSomething4();
 }
 ```
@@ -82,9 +82,9 @@ This would result in the following code:
 ```java
 public void render(ResourceLocation guiTexture, ResourceLocation otherTexture) {
     if (shouldRenderGui()) {
-+       RenderSystem.setShaderColor(1f, 1f, 1f, 0.5f);
+        RenderSystem.setShaderColor(1f, 1f, 1f, 0.5f);
         drawGuiTexture(guiTexture);
-+       RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
+        RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
     }
     else if (shouldRenderOther()) {
         drawOtherTexture(otherTexture)

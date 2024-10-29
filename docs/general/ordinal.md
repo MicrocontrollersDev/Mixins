@@ -24,8 +24,7 @@ Which results in:
 ```java
 public void foo() {
     int a = doSomething(1);
--   int b = doSomething(2);
-+   int b = redirectSomething(2);
+    int b = redirectSomething(2);
     int c = doSomething(3);
 }
 ```
