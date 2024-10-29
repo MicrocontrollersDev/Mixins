@@ -62,11 +62,12 @@ extra:
 
 nav:
   - "Mixin Start": "index.md"
-  - "At": "at.md"
-  - "Ordinal": "ordinal.md"
-  - "Shift": "shift.md"
-  - "Slice": "slice.md"
-  - "Ducks": "duck.md"
+  - "General":
+      - "At": "general/at.md"
+      - "Ordinal": "general/ordinal.md"
+      - "Shift": "general/shift.md"
+      - "Slice": "general/slice.md"
+      - "Ducks": "general/duck.md"
   - "Default Injections":
       - "Default Injections": "default/index.md"
       - "Overwrite": "default/overwrite.md"
