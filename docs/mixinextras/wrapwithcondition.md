@@ -27,7 +27,7 @@ This produces:
 
 ```java
 public void foo() {
-    if (shouldDoSomething) {
+    if (ModConfig.configOption) {
         doSomething();
     }
 }

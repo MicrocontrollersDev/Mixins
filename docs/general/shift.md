@@ -16,7 +16,7 @@ public void foo() {
 }
 ```
 
-Let's say we wanted to call doSomething3() after doSomething2. This could be done as such:
+Let's say we wanted to call doSomething3() after doSomething2. This could be done using a Shift.AFTER as such:
 
 ```java
 @Inject(method = "foo", at = @At(value = "INVOKE", target = "doSomething2()V", at = At.Shift.AFTER))

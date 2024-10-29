@@ -22,7 +22,7 @@ Instead of using a redirect, we can wrap the operation as such:
 ```java
 @WrapOperation(method = "foo", at = @At(value = "INVOKE", target = "doSomething(ILjava/lang/String;Z)V"))
 private void wrapSomething(Foo instance, int a, String b, boolean c, Operation<Void> original) {
-    if (ModConfig.replace) {
+    if (ModConfig.configOption) {
         return doSomethingElse(a, b, c);
     } else {
         return original.call(instance, a, b, c); // we can call the original method using original.call instead of actually calling the method itself

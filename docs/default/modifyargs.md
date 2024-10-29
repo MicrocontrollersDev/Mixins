@@ -9,10 +9,11 @@ public void foo(float f) {
     String a = param.toString();
     int b = f / 4;
     doSomething(a, b, f);
+    return b + f;
 }
 ```
 
-Let's say we wanted to change both b and f to be divided by 2 instead. Since the variables are only used in the doSomething call, we can `ModifyArgs` the call:
+Let's say we wanted to change both b and f to be divided by 2 instead **only** in the doSomething call. We can `ModifyArgs` the call:
 
 ```java
 @ModifyArgs(method = "foo", at = @At(value = "INVOKE", target = "doSomething(Ljava/lang/String;IF)V"))
@@ -23,7 +24,9 @@ private void changeMethodParams(Args args) {
     int newF = f / 2;
     args.set(1, newB); // sets the 1st (0-indexed) variable
     args.set(2, newF); // sets the 2nd (0-indexed) variable
-    // this code can obviously be simplified down
+    // this code can obviously be simplified down:
+    // args.set(1, (int) args.get(1) / 2);
+    // args.set(2, (float) args.get(1) / 2);
 }
 ```
 
@@ -34,6 +37,7 @@ public void foo(float f) {
     String a = f.toString();
     int b = f / 4;
     doSomething(a, b / 2, f / 2);
+    return b + f;
 }
 ```
 
