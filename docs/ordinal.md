@@ -13,7 +13,7 @@ public void foo() {
 If we wanted to `Redirect` doSomething(2) specifically, this can be done using an ordinal:
 
 ```java
-@Redirect(method = "foo", at = @At("INVOKE", target = "doSomething(I)I"), ordinal = 1)
+@Redirect(method = "foo", at = @At(value = "INVOKE", target = "doSomething(I)I"), ordinal = 1)
 private void redirectSomething(int original) {
     return doSomethingElse(original);
 }

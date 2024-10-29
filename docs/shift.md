@@ -19,7 +19,7 @@ public void foo() {
 Let's say we wanted to call doSomething3() after doSomething2. This could be done as such:
 
 ```java
-@Inject(method = "foo", at = @At("INVOKE", target = "doSomething2()V", at = At.Shift.AFTER))
+@Inject(method = "foo", at = @At(value = "INVOKE", target = "doSomething2()V", at = At.Shift.AFTER))
 private void doSomethingAfter() {
     doSomething3();
 }
@@ -66,12 +66,12 @@ public void render(ResourceLocation guiTexture, ResourceLocation otherTexture) {
 And we want to surround only the drawGuiTexture call in calls to RenderSystem.setShaderColor to overlay a color or apply opacity. However, we want to reset the shader color before rendering anything else. To do this, we can surround the drawGuiTexture call with our first regular `Inject`, and a second shifted `Inject` as so:
 
 ```java
-@Inject(method = "render", at = @At("INVOKE", target = "drawTexture(Lnet/minecraft/resources/ResourceLocation)V"))
+@Inject(method = "render", at = @At(value = "INVOKE", target = "drawTexture(Lnet/minecraft/resources/ResourceLocation)V"))
 private void drawGuiTexturePre() {
     RenderSystem.setShaderColor(1f, 1f, 1f, 0.5f); // set an alpha of 0.5
 }
 
-@Inject(method = "render", at = @At("INVOKE", target = "drawTexture(Lnet/minecraft/resources/ResourceLocation)V", at = At.Shift.AFTER))
+@Inject(method = "render", at = @At(value = "INVOKE", target = "drawTexture(Lnet/minecraft/resources/ResourceLocation)V", at = At.Shift.AFTER))
 private void drawGuiTexturePost() {
         RenderSystem.setShaderColor(1f, 1f, 1f, 1f); // reset alpha after drawing the texture
 }
