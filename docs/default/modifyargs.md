@@ -41,4 +41,4 @@ public void foo(float f) {
 }
 ```
 
-Remember that args.get(index) and args.set(index) are 0-indexed!
+Remember that `args.get(index)` and `args.set(index)` are 0-indexed!

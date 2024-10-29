@@ -17,7 +17,7 @@ public void foo(int param) {
 }
 ```
 
-Instead of using a redirect, we can wrap the operation as such:
+Instead of using a `Redirect`, we can wrap the operation as such:
 
 ```java
 @WrapOperation(method = "foo", at = @At(value = "INVOKE", target = "doSomething(ILjava/lang/String;Z)V"))

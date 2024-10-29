@@ -16,7 +16,7 @@ public void foo() {
 }
 ```
 
-Let's say we wanted to call doSomething3() after doSomething2. This could be done using a Shift.AFTER as such:
+Let's say we wanted to call doSomething3() after doSomething2. This could be done using a `Shift.AFTER` as such:
 
 ```java
 @Inject(method = "foo", at = @At(value = "INVOKE", target = "doSomething2()V", at = At.Shift.AFTER))
@@ -38,15 +38,15 @@ public void foo() {
 
 ## Before
 
-Before is not recommended.
+!!! warning Shifting before is not recommended.
 
-TODO: write this section
+You can shift backwards by an instruction by using `shift = At.Shift.BEFORE`. However, since mixin injections already inject before the method call, shifting like this is unecessary and britle in most cases.
 
 ## By
 
-By is not recommended.
+!!! warning Shifting by is not recommended.
 
-TODO: write this section
+You can specify a certain number of instructions to shift by by using `shift = At.Shift.BY = i`, where `i` is a number that you choose to shift by. This method of shifting is brittle and should be avoided.
 
 ## Practical Example
 
