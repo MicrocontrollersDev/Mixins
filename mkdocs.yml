@@ -61,7 +61,7 @@ extra:
       link: https://ko-fi.com/microcontrollers
 
 nav:
-  - "Mixin Start": "index.md"
+  - "Mixins": "index.md"
   - "General":
       - "General": "general/index.md"
       - "At": "general/at.md"
