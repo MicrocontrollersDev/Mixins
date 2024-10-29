@@ -1,0 +1,96 @@
+site_name: Mixins
+copyright: Copyright 2024 MicrocontrollersDev
+
+theme:
+  # favicon: assets/images/logo.png
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
+    - content.code.annotate
+    - content.code.copy
+    - content.action.edit
+  name: material
+  # logo: assets/images/logo.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: blue green
+    accent: blue
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: blue green
+    accent: blue
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
+
+repo_name: Mixins
+repo_url: https://github.com/MicrocontrollersDev/Mixins
+edit_uri: ../Mixins/edit/main/docs/
+extra:
+  social:
+    - icon: simple/modrinth
+      link: https://modrinth.com/user/Microcontrollers
+    - icon: simple/curseforge
+      link: https://legacy.curseforge.com/members/microcontrollerstv/projects
+    - icon: simple/codeberg
+      link: https://codeberg.org/MicrocontrollersDev
+    - icon: fontawesome/brands/github
+      link: https://github.com/MicrocontrollersDev
+    - icon: simple/matrix
+      link: https://matrix.to/#/!axTNrRSaDlwHtQznCp:matrix.org
+    - icon: simple/revoltdotchat
+      link: https://rvlt.gg/vNMTy2bw
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/rejfv9kFJj
+    - icon: simple/mastodon
+      link: https://sakurajima.social/@microcontrollers
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@Microcontrollers
+    - icon: simple/kofi
+      link: https://ko-fi.com/microcontrollers
+
+nav:
+  - "Mixin Start": "docs/index.md"
+  - "General Mixin Knowledge": "docs/general.md"
+  - "Default Injections":
+      - "Overwrite": "docs/default/overwrite.md"
+      - "Inject": "docs/default/inject.md"
+      - "Redirect": "docs/default/redirect.md"
+      - "ModifyArg": "docs/default/modifyarg.md"
+      - "ModifyArgs": "docs/default/modifyargs.md"
+      - "ModifyConstant": "docs/default/modifyconstant.md"
+      - "ModifyVariable": "docs/default/modifyvariable.md"
+  - "Mixin Extras":
+      - "ModifyExpressionValue": "docs/mixinextras/modifyexpressionvalue.md"
+      - "ModifyReceiver": "docs/mixinextras/modifyreceiver.md"
+      - "ModifyReturnValue": "docs/mixinextras/modifyreturnvalue.md"
+      - "WrapMethod": "docs/mixinextras/wrapmethod.md"
+      - "WrapOperation": "docs/mixinextras/wrapoperation.md"
+      - "WrapWithCondition": "docs/mixinextras/wrapwithcondition"
+      - "Sugar":
+          - "Cancellable": "docs/mixinextras/sugar/cancellable.md"
+          - "Local": "docs/mixinextras/sugar/local.md"
+          - "Share": "docs/mixinextras/sugar/share.md"
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - open-in-new-tab
