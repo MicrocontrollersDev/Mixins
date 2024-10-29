@@ -37,7 +37,7 @@ public void foo(int param) {
     int a = this.getInt(param);
     String b = this.getString(param);
     boolean c = this.getBool(param);
-    if (ModConfig.replace) {
+    if (ModConfig.configOption) {
         doSomethingElse(a, b, c);
     } else {
         doSomething(a, b, c);
