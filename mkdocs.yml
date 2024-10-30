@@ -36,7 +36,7 @@ theme:
 
 repo_name: Mixins
 repo_url: https://github.com/MicrocontrollersDev/Mixins
-edit_uri: ../Mixins/edit/main/
+edit_uri: ../Mixins/edit/main/docs/
 extra:
   social:
     - icon: simple/modrinth
