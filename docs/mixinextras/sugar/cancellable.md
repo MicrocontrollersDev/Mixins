@@ -3,6 +3,7 @@
 `Cancellable` lets you use CallbackInfo or CallbackInfoReturnable on any type of injection.
 
 We can use `Cancellable` by adding either of the following to the mixin method arguments:
+
 * `@Cancellable CallbackInfo ci` for a void method
 * `@Cancellable CallbackInfoReturnable<ReturnType> cir` for a non-void method
 
