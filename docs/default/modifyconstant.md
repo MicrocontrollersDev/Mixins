@@ -1,7 +1,7 @@
 # ModifyConstant
 
 !!! warning
-    ModifyConstant causes hard conflicts with any other mods trying to change the same constant and should be avoided when possible. You can usually receieve a similar result with a ModifyExpressionValue (TODO: create and link).
+    `ModifyConstant` causes hard conflicts with any other mods trying to change the same constant and should be avoided when possible. You can usually receieve a similar result with a `ModifyExpressionValue` (TODO: create and link).
 
 `ModifyConstant` allows easy editing of a constant anywhere in a method.
 
