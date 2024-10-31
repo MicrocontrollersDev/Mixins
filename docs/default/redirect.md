@@ -16,7 +16,7 @@ public void foo(int param) {
 }
 ```
 
-If we want to change the doSomething to something else, wrap the original call in a check, or simply skip the call altogether, we can do that as such.
+If we want to change the doSomething to something else, wrap the original call in a check, or simply skip the call altogether, we can do that as such:
 
 ```java
 @Redirect(method = "foo", at = @At(value = "INVOKE", target = "doSomething(ILjava/lang/String;Z)V"))
