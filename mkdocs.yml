@@ -13,6 +13,7 @@ theme:
     - toc.integrate
     - content.code.annotate
     - content.code.copy
+    - content.tooltips
     - content.action.edit
   name: material
   # logo: assets/images/logo.png
@@ -106,6 +107,14 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.saneheaders
 
 plugins:
   - search
