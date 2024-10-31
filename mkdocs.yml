@@ -64,11 +64,13 @@ nav:
   - "Mixins": "index.md"
   - "General":
       - "General": "general/index.md"
+      - "Debug": "general/debug.md"
       - "At": "general/at.md"
       - "Ordinal": "general/ordinal.md"
       - "Shift": "general/shift.md"
       - "Slice": "general/slice.md"
       - "Ducks": "general/duck.md"
+      - "Corece": "general/coerce.md"
   - "Default Injections":
       - "Default Injections": "default/index.md"
       - "Overwrite": "default/overwrite.md"
