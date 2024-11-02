@@ -8,4 +8,4 @@ When attempting to mixin into a class that may not exist at runtime, say, when y
 public class OtherModMixin {
     ...
 }
-```java
+```
