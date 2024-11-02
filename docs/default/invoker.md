@@ -20,7 +20,7 @@ If we wanted to call drawTexture with color in another mixin (not in RenderMixin
 
 ```java
 @Mixin(Render.class)
-public interface RenderInvoker { // invoker methods are interfaces!!!
+public interface RenderInvoker { // invoker classes are interfaces!!!
     @Invoker
 	void invokeDrawTexture(ResourceLocation texture, int x, int y, int color);
 }
