@@ -7,18 +7,18 @@ Say we had a mixin like so:
 TODO: check if method signature makes sense
 
 ```java
-@WrapOperation(method = "foo", at = @At(value = "INVOKE", target = "doSomething(LPrivateClass;)V"))
-private void doSomethingElse(PrivateClass param) {
-    return doThisInstead();
+@WrapOperation(method = "foo", at = @At(value = "INVOKE", target = "doSomething(LPrivateClass;II)V"))
+private void doSomethingElse(PrivateClass param, int x, int y) {
+    doThisInstead(x, y);
 }
 ```
 
 Let's say PrivateClass is private. Now, this mixin will not work, even though we don't even use the parameter in our mixin at all. We could write an access widener or access transformer, or we can use `Coerce` to coerce it into a different object.
 
 ```java
-@WrapOperation(method = "foo", at = @At(value = "INVOKE", target = "doSomething(LPrivateClass;)V"))
-private void doSomethingElse(@Coerce Object param) {
-    return doThisInstead();
+@WrapOperation(method = "foo", at = @At(value = "INVOKE", target = "doSomething(LPrivateClass;II)V"))
+private void doSomethingElse(@Coerce Object param, int x, int y) {
+    doThisInstead(x, y);
 }
 ```
 
