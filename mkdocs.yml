@@ -11,6 +11,7 @@ theme:
     - navigation.expand
     - navigation.indexes
     - toc.integrate
+    - toc.follow
     - content.code.annotate
     - content.code.copy
     - content.tooltips
@@ -119,3 +120,10 @@ markdown_extensions:
 plugins:
   - search
   - open-in-new-tab
+#  - git-revision-date-localized:
+#      enable_creation_date: true
+#      fallback_to_build_date: true
+#  - git-committers:
+#      repository: MicrocontrollersDev/Mixins
+#      branch: main
+# TODO: set up GH actions to push to cloudflare https://github.com/timvink/mkdocs-git-revision-date-localized-plugin/issues/123#issuecomment-1992734955
