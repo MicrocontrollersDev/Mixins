@@ -1,6 +1,6 @@
 # Overwrite
 
-!!! warning
+!!! danger
     Overwriting is not recommended.
 
 Overwrites are the most basic mixin. They, well, overwrite a method entirely.

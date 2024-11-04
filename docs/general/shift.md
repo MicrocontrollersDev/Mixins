@@ -38,14 +38,14 @@ public void foo() {
 
 ## Before
 
-!!! warning
+!!! danger
     Shifting before is not recommended.
 
 You can shift backwards by an instruction by using `shift = At.Shift.BEFORE`. However, since mixin injections already inject before the method call, shifting like this is unecessary and britle in most cases.
 
 ## By
 
-!!! warning
+!!! danger
     Shifting by is not recommended.
 
 You can specify a certain number of instructions to shift by by using `shift = At.Shift.BY = i`, where `i` is a number that you choose to shift by. This method of shifting is brittle and should be avoided.

@@ -1,6 +1,7 @@
 # WrapOperation
 
-For a more in-depth explanation, see the [MixinExtra's Wiki](https://github.com/LlamaLad7/MixinExtras/wiki/WrapOperation).
+!!! info
+    For a more in-depth explanation, see the [MixinExtra's Wiki](https://github.com/LlamaLad7/MixinExtras/wiki/WrapOperation).
 
 Similar to `Redirect`s, `WrapOperation` lets you replace a method call with your own. However, unlike `Redirect`s, they will stack when several mods attempt to inject into the same one.
 

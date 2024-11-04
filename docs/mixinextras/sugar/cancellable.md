@@ -1,5 +1,8 @@
 # Cancellable
 
+!!! info
+    For a more in-depth explanation, see the [MixinExtra's Wiki](https://github.com/LlamaLad7/MixinExtras/wiki/Cancellable).
+
 `Cancellable` lets you use CallbackInfo or CallbackInfoReturnable on any type of injection.
 
 We can use `Cancellable` by adding either of the following to the mixin method arguments:
