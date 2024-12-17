@@ -45,3 +45,6 @@ public void foo(int param) {
     }
 }
 ```
+
+!!! warning
+    You should always return an `original.call` to maintain compatibility.
