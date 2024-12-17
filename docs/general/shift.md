@@ -1,6 +1,6 @@
 # Shift
 
-There are three types of Shifts: After, Before, and By.
+There are three types of Shifts: `After`, `Before`, and `By`.
 
 ## After
 
