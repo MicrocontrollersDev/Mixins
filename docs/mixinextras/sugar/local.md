@@ -68,7 +68,7 @@ To do so, we use the object's reference type instead of its actual type.
 * LocalIntRef
 * LocalLongRef
 * LocalShortRef
-* LocalRef\<Type\>
+* LocalRef<Type\>
 
 Say we had the following:
 
