@@ -1,8 +1,8 @@
 # Inject
 
-`@Inject` is one of the simplest injections in Mixin to understand. It allows you to inject any code at any line you want (with a few exceptions).
+`@Inject` is one of the simplest injections in Mixin to understand. It allows you to inject any code at any line you want.
 
-There are two types of `@Inject`s, cancelable, and not cancelable. But first, let's talk about the main injection points. (TODO: maybe restructure this page?)
+There are two types of `@Inject`s, cancelable, and not cancelable. But first, let's talk about the main injection points.
 
 ## Injecting at HEAD
 
