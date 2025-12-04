@@ -63,10 +63,13 @@ extra:
       link: https://ko-fi.com/microcontrollers
 
 nav:
-  - "Mixins": "index.md"
+  - "Welcome":
+      - "Overview": "overview.md"
+      - "Getting Started": "gettingstarted.md"
   - "General":
-      - "General": "general/index.md"
+      - "Overview": "general/overview.md"
       - "Debug": "general/debug.md"
+      - "Method": "general/method.md"
       - "At": "general/at.md"
       - "Ordinal": "general/ordinal.md"
       - "Shift": "general/shift.md"
@@ -77,7 +80,7 @@ nav:
       - "Corece": "general/coerce.md"
       - "Psuedo" : "general/pseudo.md"
   - "Default Injections":
-      - "Default Injections": "default/index.md"
+      - "Overview": "default/overview.md"
       - "Overwrite": "default/overwrite.md"
       - "Inject": "default/inject.md"
       - "Redirect": "default/redirect.md"
@@ -88,7 +91,7 @@ nav:
       - "Accessor": "default/accessor.md"
       - "Invoker": "default/invoker.md"
   - "Mixin Extras":
-      - "Mixin Extras": "mixinextras/index.md"
+      - "Overview": "mixinextras/overview.md"
       - "ModifyExpressionValue": "mixinextras/modifyexpressionvalue.md"
       - "ModifyReceiver": "mixinextras/modifyreceiver.md"
       - "ModifyReturnValue": "mixinextras/modifyreturnvalue.md"
@@ -96,7 +99,7 @@ nav:
       - "WrapOperation": "mixinextras/wrapoperation.md"
       - "WrapWithCondition": "mixinextras/wrapwithcondition"
       - "Sugar":
-          - "Sugar": "mixinextras/sugar/index.md"
+          - "Overview": "mixinextras/sugar/overview.md"
           - "Cancellable": "mixinextras/sugar/cancellable.md"
           - "Local": "mixinextras/sugar/local.md"
           - "Share": "mixinextras/sugar/share.md"

@@ -3,7 +3,7 @@
 !!! danger
     Overwriting is not recommended.
 
-Overwrites are the most basic mixin. They, well, overwrite a method entirely.
+Overwrites are the most basic mixin. They, well, overwrite a method entirely. Great for testing code concepts or learning before transitioning your code to other injectors, but almost always terrible for production.
 
 Say we had the following code:
 
