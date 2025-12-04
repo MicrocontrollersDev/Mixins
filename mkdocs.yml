@@ -64,14 +64,15 @@ extra:
 
 nav:
   - "Welcome":
-      - "Overview": "overview.md"
-      - "Getting Started": "gettingstarted.md"
+      - "Overview": "welcome/overview.md"
+      - "Getting Started": "welcome/gettingstarted.md"
   - "General":
       - "Overview": "general/overview.md"
       - "Debug": "general/debug.md"
       - "Method": "general/method.md"
       - "At": "general/at.md"
       - "Ordinal": "general/ordinal.md"
+      - "Index": "general/index.md"
       - "Shift": "general/shift.md"
       - "Shadow": "general/shadow.md"
       - "Unique": "general/unique.md"
