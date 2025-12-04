@@ -124,6 +124,9 @@ markdown_extensions:
 plugins:
   - search
   - open-in-new-tab
+  - redirects:
+      redirect_maps:
+        index.md: welcome/overview.md
 #  - git-revision-date-localized:
 #      enable_creation_date: true
 #      fallback_to_build_date: true

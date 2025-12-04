@@ -37,4 +37,4 @@ public class ExampleMixin {
 }
 ```
 
-We can use MCDev to autocomplete our shadows by using `this.` and autocompleting our method or field.
+We can use McDev to autocomplete our shadows by using `this.` and tab completing our method or field.

@@ -33,4 +33,4 @@ public void foo(float f) {
 }
 ```
 
-Remember that index is 0-indexed!
+However, in this case, specifying an index is actually not needed. Mixin is able to tell that there is only one int argument in the method call, so we can (and should) omit the index here! Only use an index if there is more than one of the type.
