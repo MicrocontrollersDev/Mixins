@@ -195,3 +195,5 @@ public String foo() {
 ```
 
 Simple! The other injection points, "TAIL", "RETURN", and "INVOKE", also work here.
+
+!!! warning Be careful when using `ci.cancel` or `cir.setReturnValue`. It may cause incompatibilities with other mods. Try to use other injectors where possible.
