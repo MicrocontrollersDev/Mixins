@@ -36,6 +36,18 @@ public void myMethod() {
 }
 ```
 
+If we can't getInstance, we can cast to Object instead.
+
+```java
+public void myMethod(Dummy dummy) {
+    // Getting the field
+    int i = ((AccessorMixin) (Object) dummy).modid$getDummyField();
+
+    // Setting the field
+    ((AccessorMixin) (Object) dummy).modid$setDummyField(i + 1);
+}
+```
+
 It's important to note that we should be prefixing our accessors with our mod id to prevent crashes.
 
 Also, make note again that the class type is an Interface for the accessor Mixin. This means that even if we already have a Mixin for this class for regular injections, we would need a second Mixin for this class for accessors.
