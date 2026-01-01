@@ -4,8 +4,10 @@ When attempting to mixin into a class that may not exist at runtime, say, when y
 
 ```java
 @Pseudo
-@Mixin(OtherMod.class)
+@Mixin(targets = "com.example.mod.OtherMod")
 public class OtherModMixin {
     ...
 }
 ```
+
+When using `@Pseudo` you should use targets and not a direct class reference.
