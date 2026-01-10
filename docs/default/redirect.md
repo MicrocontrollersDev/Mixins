@@ -1,9 +1,9 @@
 # Redirect
 
 !!! danger
-    `Redirect`s are not recommended as they cause hard conflicts with any other mod attempting to mixin into the same location. They can usually be replaced by either a [`WrapOperation`](https://mixins.microcontrollers.dev/mixinextras/wrapoperation) or [`WrapWithCondition`](https://mixins.microcontrollers.dev/mixinextras/wrapwithcondition).
+    `Redirect`s should not be used as they cause hard conflicts with any other mod attempting to redirect the same target. They can awlays be replaced by either a [`WrapOperation`](https://mixins.microcontrollers.dev/mixinextras/wrapoperation) or [`WrapWithCondition`](https://mixins.microcontrollers.dev/mixinextras/wrapwithcondition), or another type of injection.
 
-`Redirect` lets you redirect a method call to a different method.
+This type of injection should never be used unless you want your mod to be incompatible with other mods. `Redirect` lets you redirect a method call to a different method.
 
 Say we had the following:
 

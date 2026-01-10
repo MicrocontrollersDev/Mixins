@@ -1,9 +1,9 @@
 # ModifyConstant
 
 !!! danger
-    `ModifyConstant` causes hard conflicts with any other mods trying to change the same constant and should be avoided when possible. You can usually receieve a similar result with a `ModifyExpressionValue` (TODO: create and link).
+    `ModifyConstant` should not be used as they cause hard conflicts with any other mods trying to change the same constant. They can always be replaced with a `ModifyExpressionValue`.
 
-`ModifyConstant` allows easy editing of a constant anywhere in a method.
+This type of injection should never be used unless you want your mod to be incompatible with other mods. `ModifyConstant` allows easy editing of a constant anywhere in a method.
 
 Say we had the following code:
 
