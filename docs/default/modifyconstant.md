@@ -46,4 +46,4 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-We could use a `ModifyConstant` here to target the intValue 10 to change it to whatever we wanted.
+We could use a `ModifyConstant` here to target the intValue 10 to change it to whatever we wanted. For example, if we set it to 0, the for loop will simply never run.
