@@ -26,7 +26,7 @@ private void changeMethodParams(Args args) {
     args.set(2, newF); // sets the 2nd (0-indexed) variable
     // this code can obviously be simplified down:
     // args.set(1, (int) args.get(1) / 2);
-    // args.set(2, (float) args.get(1) / 2);
+    // args.set(2, (float) args.get(2) / 2);
 }
 ```
 
