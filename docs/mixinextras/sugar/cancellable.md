@@ -25,7 +25,7 @@ If we wanted to ModifyArgs the first doSomething, and potentially early return a
 ```java
 @ModifyArgs(method = "foo", at = @At(value = "INVOKE", target = "doSomething(I)I"), ordinal = 0)
 private void doSomethingElse(Args args, @Cancellable CallbackInfo ci) {
-    int ret = (int) args.get(1) + 1
+    int ret = (int) args.get(0) + 1;
     args.set(0, ret);
     if (ret > 5) {
         ci.cancel();

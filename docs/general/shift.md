@@ -19,8 +19,8 @@ public void foo() {
 Let's say we wanted to call doSomething3() after doSomething2. This could be done using a `Shift.AFTER` as such:
 
 ```java
-@Inject(method = "foo", at = @At(value = "INVOKE", target = "doSomething2()V", at = At.Shift.AFTER))
-private void doSomethingAfter() {
+@Inject(method = "foo", at = @At(value = "INVOKE", target = "doSomething2()V", shift = At.Shift.AFTER))
+private void doSomethingAfter(CallbackInfo ci) {
     doSomething3();
 }
 ```
@@ -68,13 +68,13 @@ public void render(ResourceLocation guiTexture, ResourceLocation otherTexture, i
 And we want to surround only the drawGuiTexture call in calls to RenderSystem.setShaderColor to overlay a color or apply opacity. However, we want to reset the shader color before rendering anything else. To do this, we can surround the drawGuiTexture call with our first regular `Inject`, and a second shifted `Inject` as so:
 
 ```java
-@Inject(method = "render", at = @At(value = "INVOKE", target = "drawTexture(Lnet/minecraft/resources/ResourceLocation)V"))
-private void drawGuiTexturePre() {
+@Inject(method = "render", at = @At(value = "INVOKE", target = "drawGuiTexture(Lnet/minecraft/resources/ResourceLocationII)V"))
+private void drawGuiTexturePre(CallbackInfo ci) {
     RenderSystem.setShaderColor(1f, 1f, 1f, 0.5f); // set an alpha of 0.5
 }
 
-@Inject(method = "render", at = @At(value = "INVOKE", target = "drawTexture(Lnet/minecraft/resources/ResourceLocation)V", at = At.Shift.AFTER))
-private void drawGuiTexturePost() {
+@Inject(method = "render", at = @At(value = "INVOKE", target = "drawGuiTexture(Lnet/minecraft/resources/ResourceLocationII)V", shift = At.Shift.AFTER))
+private void drawGuiTexturePost(CallbackInfo ci) {
         RenderSystem.setShaderColor(1f, 1f, 1f, 1f); // reset alpha after drawing the texture
 }
 ```
@@ -86,10 +86,10 @@ public void render(ResourceLocation guiTexture, ResourceLocation otherTexture, i
     int a = x / 2;
     int b = y / 2;
     RenderSystem.setShaderColor(1f, 1f, 1f, 0.5f);
-    drawGuiTexture(guiTexture);
+    drawGuiTexture(guiTexture, a, b);
     RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
     int c = a + 10;
     int d = b + 10;
-    drawOtherTexture(otherTexture);
+    drawOtherTexture(otherTexture, a, b);
 }
 ```

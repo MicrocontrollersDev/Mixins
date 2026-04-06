@@ -48,9 +48,9 @@ public void myMethod(Dummy dummy) {
 }
 ```
 
-While prefixing accessors with our modid is not strictly required if they are static or if the name you chose doesn't already exist in the target method or any other mods that may add it, it is the best way to ensure that there are no collisions, and I recommend you add them unless you know they are not required. If we don't want to prefix, we can simplify the 
+While prefixing accessors with our modid is not strictly required if they are static or if the name you chose doesn't already exist in the target method or any other mods that may add it, it is the best way to ensure that there are no collisions, and I recommend you add them unless you know they are not required. If we don't want to prefix, we can simplify the mixin.
 
-Remember that we can only have one method with the same name, parameters, and return type in a class. This is why we prefix our invoker field with "get" or "set" as these are the only two prefixes Mixin supports as mentioned in the comments. As long as we use these prefixes with the same field name in the target class, Mixin will automatically find it without specifying in the annotation.
+Remember that we can only have one method with the same name, parameters, and return type in a class. This is why we prefix our accessor field with "get" or "set" as these are the only two prefixes Mixin supports as mentioned in the comments. As long as we use these prefixes with the same field name in the target class, Mixin will automatically find it without specifying in the annotation.
 
 ```java
 @Mixin(Dummy.class)

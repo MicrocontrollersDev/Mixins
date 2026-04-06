@@ -1,7 +1,7 @@
 # Redirect
 
 !!! danger
-    `Redirect`s should not be used as they cause hard conflicts with any other mod attempting to redirect the same target. They can awlays be replaced by either a [`WrapOperation`](https://mixins.microcontrollers.dev/mixinextras/wrapoperation) or [`WrapWithCondition`](https://mixins.microcontrollers.dev/mixinextras/wrapwithcondition), or another type of injection.
+    `Redirect`s should not be used as they cause hard conflicts with any other mod attempting to redirect the same target. They can always be replaced by either a [`WrapOperation`](https://mixins.microcontrollers.dev/mixinextras/wrapoperation) or [`WrapWithCondition`](https://mixins.microcontrollers.dev/mixinextras/wrapwithcondition), or another type of injection.
 
 This type of injection should never be used unless you want your mod to be incompatible with other mods. `Redirect` lets you redirect a method call to a different method.
 
@@ -20,11 +20,11 @@ If we want to change the doSomething to something else, wrap the original call i
 
 ```java
 @Redirect(method = "foo", at = @At(value = "INVOKE", target = "doSomething(ILjava/lang/String;Z)V"))
-private void wrapSomething(Foo instance, int a, String b, boolean c, Operation<Void> original) {
+private void wrapSomething(Foo instance, int a, String b, boolean c) {
     if (ModConfig.doSomethingElse) {
-        return doSomethingElse(a, b, c); // new method
+        doSomethingElse(a, b, c); // new method
     } else if (ModConfig.doOriginal) {
-        return doSomething(a, b, c); // original method, but conditionally wrapped
+        doSomething(a, b, c); // original method, but conditionally wrapped
     } else {
         // No-op (the original method call is skipped entirely)
     }

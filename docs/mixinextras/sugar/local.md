@@ -26,7 +26,7 @@ We can do:
 
 ```java
 @WrapOperation(method = "foo", at = @At(value = "INVOKE", target = "doSomething"))
-private void doSomethingElse(@Local(argsOnly = true) boolean b) {
+private void doSomethingElse(@Local(argsOnly = true) boolean b, Operation<Void> original) {
     somethingElse(b);
 }
 ```
@@ -48,8 +48,8 @@ public void foo() {
 We can do:
 
 ```java
-@WrapOperation(method = "foo", at = @At(value = "INVOKE", target = "doSomething(ZZ)"))
-private void doSomethingElse(@Local(ordinal = 1) boolean b) {
+@WrapOperation(method = "foo", at = @At(value = "INVOKE", target = "doSomething(ZZ)V"))
+private void doSomethingElse(@Local(ordinal = 1) boolean b, Operation<Void> original) {
     somethingElse(b);
 }
 ```

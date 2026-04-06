@@ -27,7 +27,7 @@ private void addMessage0(CallbackInfo ci) {
 Which leaves us with:
 
 ```java
-public void foo(float f) {
+public void foo() {
     System.out.println("Message 0");
     System.out.println("Message 1");
     System.out.println("Message 2");
@@ -45,7 +45,7 @@ public void foo() {
 }
 ```
 
-And we wanted to add a print line for "Message 3" at the end. We would inject at the "head" of the method.
+And we wanted to add a print line for "Message 3" at the end. We would inject at the "tail" of the method.
 
 ```java
 @Inject(method = "foo", at = @At("TAIL"))
@@ -57,7 +57,7 @@ private void addMessage3(CallbackInfo ci) {
 Which leaves us with:
 
 ```java
-public void foo(float f) {
+public void foo() {
     System.out.println("Message 1");
     System.out.println("Message 2");
     System.out.println("Message 3");
@@ -84,7 +84,7 @@ And we wanted to add a print, say, "Hello World!" before printing "True!". Yes, 
 
 ```java
 @Inject(method = "foo", at = @At("RETURN"), ordinal = 0) // Remember: ordinals are zero-indexed
-private void printValues(CallbackInfoReturnable cir) {
+private void printValues(CallbackInfoReturnable<String> cir) {
     System.out.println("Hello World!");
 }
 ```
@@ -179,7 +179,7 @@ We can simply use a CallbackInfoReturnable.
 
 ```java
 @Inject(method = "foo", at = @At("HEAD"), cancelable = true)
-private String cancelFoo(CallbackInfoReturnable cir) { // Notice the method is no longer void, but the same type as the method we inject!
+private void cancelFoo(CallbackInfoReturnable<String> cir) {
     cir.setReturnValue("New custom string!");
 }
 ```

@@ -16,7 +16,7 @@ public void foo() {
 }
 ```
 
-If we wanted to translate both the textures along the `y`, we could simply do so by modifying the constant from the `+ 5`:
+If we wanted to translate both the textures along the `x`, we could simply do so by modifying the constant from the `+ 5`:
 
 ```java
 @ModifyConstant(method = "foo", constant = @Constant(intValue = 5))

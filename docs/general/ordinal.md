@@ -14,7 +14,7 @@ If we wanted to `Redirect` doSomething(2) specifically, this can be done using a
 
 ```java
 @Redirect(method = "foo", at = @At(value = "INVOKE", target = "doSomething(I)I"), ordinal = 1)
-private void redirectSomething(int original) {
+private int redirectSomething(TargetClass instance, int original) {
     return doSomethingElse(original);
 }
 ```
@@ -24,7 +24,7 @@ Which results in:
 ```java
 public void foo() {
     int a = doSomething(1);
-    int b = redirectSomething(2);
+    int b = doSomethingElse(2);
     int c = doSomething(3);
 }
 ```

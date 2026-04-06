@@ -5,8 +5,8 @@
 Say we had the following code:
 
 ```java
-public void foo(float f) {
-    String a = param.toString();
+public int foo(float f) {
+    String a = String.valueOf(f);
     int b = f / 4;
     doSomething(a, b, f);
     return b + f;
@@ -21,7 +21,7 @@ private void changeMethodParams(Args args) {
     int b = args.get(1); // gets the 1st (0-indexed) variable
     float f = args.get(2); // gets the 2nd (0-indexed) variable
     int newB = b / 2;
-    int newF = f / 2;
+    float newF = f / 2;
     args.set(1, newB); // sets the 1st (0-indexed) variable
     args.set(2, newF); // sets the 2nd (0-indexed) variable
     // this code can obviously be simplified down:
@@ -33,7 +33,7 @@ private void changeMethodParams(Args args) {
 This results in:
 
 ```java
-public void foo(float f) {
+public int foo(float f) {
     String a = f.toString();
     int b = f / 4;
     doSomething(a, b / 2, f / 2);

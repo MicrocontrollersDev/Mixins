@@ -6,7 +6,7 @@ Say we had the following code:
 
 ```java
 public int foo(float f) {
-    String a = f.toString();
+    String a = String.valueOf(f);
     int b = f / 4;
     doSomething(a, b, f);
     return b + 5;
@@ -25,7 +25,7 @@ private int changeMethodParam(int b) {
 This results in:
 
 ```java
-public void foo(float f) {
+public int foo(float f) {
     String a = f.toString();
     int b = f / 4;
     doSomething(a, b / 2, f);

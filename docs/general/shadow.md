@@ -31,7 +31,7 @@ public class ExampleMixin {
     public void printString(String string);
 
     @Inject(method = "foo", at = @At("HEAD"))
-    private final fooInject(CallbackInfo ci) {
+    private void fooInject(CallbackInfo ci) {
         this.printString(this.example);
     }
 }
