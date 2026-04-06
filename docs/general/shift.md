@@ -68,12 +68,12 @@ public void render(ResourceLocation guiTexture, ResourceLocation otherTexture, i
 And we want to surround only the drawGuiTexture call in calls to RenderSystem.setShaderColor to overlay a color or apply opacity. However, we want to reset the shader color before rendering anything else. To do this, we can surround the drawGuiTexture call with our first regular `Inject`, and a second shifted `Inject` as so:
 
 ```java
-@Inject(method = "render", at = @At(value = "INVOKE", target = "drawGuiTexture(Lnet/minecraft/resources/ResourceLocationII)V"))
+@Inject(method = "render", at = @At(value = "INVOKE", target = "drawGuiTexture(Lnet/minecraft/resources/ResourceLocationII;)V"))
 private void drawGuiTexturePre(CallbackInfo ci) {
     RenderSystem.setShaderColor(1f, 1f, 1f, 0.5f); // set an alpha of 0.5
 }
 
-@Inject(method = "render", at = @At(value = "INVOKE", target = "drawGuiTexture(Lnet/minecraft/resources/ResourceLocationII)V", shift = At.Shift.AFTER))
+@Inject(method = "render", at = @At(value = "INVOKE", target = "drawGuiTexture(Lnet/minecraft/resources/ResourceLocationII;)V", shift = At.Shift.AFTER))
 private void drawGuiTexturePost(CallbackInfo ci) {
         RenderSystem.setShaderColor(1f, 1f, 1f, 1f); // reset alpha after drawing the texture
 }
