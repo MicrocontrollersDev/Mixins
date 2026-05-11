@@ -1,8 +1,8 @@
 # Name
 
-Using `name` is only viable in 26.1+ as the game is no longer obfuscated and we have local variable names.
+Using `name` is only viable in 26.1+ as Minecraft is no longer obfuscated and we have local variable names, unless you are targetting a nonobfuscated class.
 
-When specifying a local variable, like when [capturing locals](https://mixins.microcontrollers.dev/mixinextras/sugar/local) or using [`ModifyVariable`](https://mixins.microcontrollers.dev/default/modifyvariable), it is much easier and safer to use the variable name, rather than counting ordinals/indices, which will change through Minecraft updates. McDev should allow autocompletion of all names.
+When specifying a local variable, like when [capturing locals](https://mixins.microcontrollers.dev/mixinextras/sugar/local) or using [`ModifyVariable`](https://mixins.microcontrollers.dev/default/modifyvariable), it is much easier and safer to use the variable name, rather than counting [`ordinals`](https://mixins.microcontrollers.dev/general/ordinal)/[`indices`](https://mixins.microcontrollers.dev/general/index_), which will change through Minecraft updates. McDev should allow autocompletion of all names.
 
 For example, if we had a variable name, conveniently named variableName, we can very easily capture it like so:
 

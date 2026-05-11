@@ -71,6 +71,7 @@ nav:
       - "Debug": "general/debug.md"
       - "Method": "general/method.md"
       - "At": "general/at.md"
+      - "Name": "general/name.md"
       - "Ordinal": "general/ordinal.md"
       - "Index": "general/index_.md"
       - "Shift": "general/shift.md"
@@ -80,6 +81,7 @@ nav:
       - "Ducks": "general/duck.md"
       - "Corece": "general/coerce.md"
       - "Psuedo" : "general/pseudo.md"
+      - "Remap": "general/remap.md"
   - "Default Injections":
       - "Overview": "default/overview.md"
       - "Overwrite": "default/overwrite.md"
