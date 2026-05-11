@@ -1,5 +1,8 @@
 # Ordinals
 
+!!! warning
+    Ordinals should typically be avoided, especially as you target higher value ordinals. They are inherently brittle as they can change between Minecraft versions, and it can be difficult to see at a glance that you are now targetting the wrong ordinal without actually testing your feature. In general, if you can avoid using an ordinal via a different injection type, it would be advisable to do so. Ordinals can also almost always be avoided with the use of `Expression`s or `Slice`s.
+
 Let's say there exist several of a method we are attempting to inject at as below:
 
 ```java

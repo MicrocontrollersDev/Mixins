@@ -198,3 +198,6 @@ Simple! The other injection points, "TAIL", "RETURN", and "INVOKE", also work he
 
 !!! warning
     Be careful when using `ci.cancel` or `cir.setReturnValue`. It may cause incompatibilities with other mods. Try to use other injectors where possible.
+
+!!! danger
+    Any usage of `cir.setReturnValue(cir.getReturnValue())` should always be replaced with a [`ModifyReturnValue`](https://mixins.microcontrollers.dev/mixinextras/modifyreturnvalue)

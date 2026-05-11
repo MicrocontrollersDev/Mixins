@@ -1,7 +1,7 @@
 # ModifyConstant
 
 !!! danger
-    `ModifyConstant` should not be used as they cause hard conflicts with any other mods trying to change the same constant. They can always be replaced with a `ModifyExpressionValue`.
+    `ModifyConstant` should not be used as they cause hard conflicts with any other mods trying to change the same constant. They can **always** be replaced with a [`ModifyExpressionValue`](https://mixins.microcontrollers.dev/mixinextras/modifyexpressionvalue).
 
 This type of injection should never be used unless you want your mod to be incompatible with other mods. `ModifyConstant` allows easy editing of a constant anywhere in a method.
 

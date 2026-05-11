@@ -15,9 +15,7 @@ Lastly, this guide is meant to be a general guide targeted towards new users or 
 
 ## What are they?
 
-Mixins are one of the most powerful, but dangerous tools in the entierity of the Minecraft modding scene. Unlike your typical Forge or Fabric API events, mixins are direct modification of the Minecraft code using ASM. Our mixin classes aren't typical classes - at runtime, they will directly modify Minecraft's code. Due to the power of mixins, it's important to write good code that ensures mod compatability.
-
-> "With Great power, comes great responsibility"
+Mixins are one of the most powerful, but dangerous tools in the entierity of the Minecraft modding scene. Unlike your typical Forge or Fabric API events, mixins are direct modification of the Minecraft code using ASM. Our mixin classes aren't typical classes - at runtime, they will directly modify Minecraft's code. Due to the power of mixins, it's important to write good code that ensures mod compatability. There are many safe ways to write mixins, and also many destructive ways, and so it is best to follow the best practices to ensure no issues arise.
 
 ## What about other mods?
 

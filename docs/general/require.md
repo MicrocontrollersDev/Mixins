@@ -5,5 +5,5 @@ Depending on your mod template, you may have noticed a "defaultRequire", usually
 Mixing into another mod is inherently brittle since while Minecraft's code isn't going to change for whatever version you target, other mods can. There may be cases where mod compatibility is not a big deal (e.g., just a small visual error that does not warrant a full blown crash). In these cases, we can add a `require = 0` to the injector to allow your mixin to fail without crashing the game.
 
 ```java
-@Inject(method = ..., at = @At(...) require = 0)
+@Inject(method = ..., at = @At(...), require = 0)
 ```
