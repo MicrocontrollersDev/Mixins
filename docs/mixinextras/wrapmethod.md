@@ -1,5 +1,8 @@
 # WrapMethod
 
+!!! info
+    For a more in-depth explanation, see the [MixinExtra's Wiki](https://github.com/LlamaLad7/MixinExtras/wiki/WrapMethod).
+
 `WrapMethod` is somewhat similar to [`WrapOperation`](https://mixins.microcontrollers.dev/mixinextras/wrapoperation), except instead of wrapping a method call, we wrap the entire method itself.
 
 Let's say we have a method called foo:
