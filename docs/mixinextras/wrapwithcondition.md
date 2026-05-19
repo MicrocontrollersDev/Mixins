@@ -3,9 +3,9 @@
 !!! info
     For a more in-depth explanation, see the [MixinExtra's Wiki](https://github.com/LlamaLad7/MixinExtras/wiki/WrapWithCondition).
 
-`WrapWithCondition` lets you wrap a method call with a condition. This is a much simpler and compatible way compared to using a `Redirect` and no-op'ing when a condition fails.
+`WrapWithCondition` lets you wrap a method call with a condition. This is a much simpler and compatible way compared to using a [`Redirect`](https://mixins.microcontrollers.dev/default/redirect) and no-op'ing when a condition fails.
 
-`WrapWithCondition` should be used in favor of `Redirect` when applicable.
+`WrapWithCondition` should be used in favor of [`Redirect`](https://mixins.microcontrollers.dev/default/redirect) when applicable.
 
 Say we had the following code:
 

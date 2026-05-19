@@ -48,7 +48,7 @@ You can shift backwards by an instruction by using `shift = At.Shift.BEFORE`. Ho
 !!! danger
     Shifting by is not recommended.
 
-You can specify a certain number of instructions to shift by by using `shift = At.Shift.BY = i`, where `i` is a number that you choose to shift by. This method of shifting is brittle and should be avoided.
+You can specify a certain number of instructions to shift by by using `shift = At.Shift.BY = i`, where `i` is a number that you choose to shift by. This method of shifting is brittle and should be avoided. Note that some mixin jsons might put a cap on the max shift by.
 
 ## Practical Example
 
