@@ -10,6 +10,8 @@ For example, if we had a variable name, conveniently named variableName, we can 
 @Local(name = "variableName") int variableName
 ```
 
-# Migrating
+## Migrating
 
 If you are moving from older versions, McDev should automatically flag these and provide you with easy one-click conversions.
+
+If you are trying to backport, you should not depend on `name`.

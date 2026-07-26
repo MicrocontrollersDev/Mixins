@@ -22,9 +22,9 @@ This will generate a .class file in `/run/.mixin.out` that you can simply throw 
 
 It's important to note that some classes may not generate the mixin output until after they have been properly loaded. For example, if you mixin into the chat window, you may need to join a world and open chat before the file is created in your .mixin.out.
 
-### Project Wide Debugging
+### Project Wide Exporting
 
-If you want to debug ALL your mixins, you can add the JVM argument `-DMixin.debug.export=true` to your run config's VM options.
+If you want to debug export ALL your mixins, you can add the JVM argument `-DMixin.debug.export=true` to your run config's VM options.
 
 ## Other Debugging Settings
 
