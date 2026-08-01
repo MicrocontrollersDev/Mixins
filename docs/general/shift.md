@@ -41,7 +41,7 @@ public void foo() {
 !!! danger
     Shifting before is not recommended.
 
-You can shift backwards by an instruction by using `shift = At.Shift.BEFORE`. However, since mixin injections already inject before the method call, shifting like this is unecessary and britle in most cases.
+You can shift backwards by an instruction by using `shift = At.Shift.BEFORE`. However, since mixin injections already inject before the method call, shifting like this is unnecessary and britle in most cases.
 
 ## By
 
