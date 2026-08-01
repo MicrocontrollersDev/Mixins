@@ -55,11 +55,11 @@ Remember that we can only have one method with the same name, parameters, and re
 ```java
 @Mixin(Dummy.class)
 public interface AccessorMixin {
-	@Accessor
-	int getDummyField(); // getters must be named get[NAME]
+    @Accessor
+    int getDummyField(); // getters must be named get[NAME]
 
-	@Accessor
-	void setDummyField(int value); // setters must be named set[NAME]
+    @Accessor
+    void setDummyField(int value); // setters must be named set[NAME]
 }
 ```
 
