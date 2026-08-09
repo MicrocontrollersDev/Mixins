@@ -1,7 +1,7 @@
 # Ordinals
 
 !!! warning
-    Ordinals should typically be avoided, especially as you target higher value ordinals. They are inherently brittle as they can change between Minecraft versions, and it can be difficult to see at a glance that you are now targetting the wrong ordinal without actually testing your feature. In general, if you can avoid using an ordinal via a different injection type, it would be advisable to do so. Ordinals can also almost always be avoided with the use of `Expression`s or `Slice`s.
+    Ordinals should typically be avoided, especially as you target higher value ordinals. They are inherently brittle as they can change between Minecraft versions, and it can be difficult to see at a glance that you are now targetting the wrong ordinal without actually testing your feature. In general, if you can avoid using an ordinal via a different injection type, it would be advisable to do so. Ordinals can also almost always be avoided with the use of `Expression`s or [`Slice`s](https://mixins.microcontrollers.dev/general/slice).
 
 Let's say there exist several of a method we are attempting to inject at as below:
 
@@ -34,4 +34,4 @@ public void foo() {
 
 Ordinals are 0-indexed, meaning the first instance of a method will have an ordinal of 0, the second will have an ordinal of 1, and so on.
 
-If you wish to target all instances of the method call, simply leave out the ordinal and mixin will target all of them. If you wish to target multiple but not all, you must either repeat the injection with each ordinal or use slices. TODO: create and link slices page
+If you wish to target all instances of the method call, simply leave out the ordinal and mixin will target all of them. If you wish to target multiple but not all, you must either repeat the injection with each ordinal or use [`Slice`s](https://mixins.microcontrollers.dev/general/slice).

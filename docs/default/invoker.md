@@ -50,3 +50,7 @@ public interface RenderInvoker {
 Also, make note again that the class type is an Interface for the invoker Mixin. This means that even if we already have a Mixin for this class for regular injections, we would need a second Mixin for this class for invokers.
 
 TODO: Static invokers
+
+## Note
+
+`@Invoker`s and [`@Accessor`s](https://mixins.microcontrollers.dev/default/accessor) can live in the same class!

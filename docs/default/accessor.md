@@ -66,3 +66,7 @@ public interface AccessorMixin {
 Also, make note again that the class type is an Interface for the accessor Mixin. This means that even if we already have a Mixin for this class for regular injections, we would need a second Mixin for this class for accessors.
 
 This page is directly based off of [dblsaiko's Mixin Cheat Sheet](https://github.com/dblsaiko/mixin-cheatsheet/blob/master/accessor.md) page for Accessors.
+
+## Note
+
+`@Accessor`s and [`@Invoker`s](https://mixins.microcontrollers.dev/default/invoker) can live in the same class!
