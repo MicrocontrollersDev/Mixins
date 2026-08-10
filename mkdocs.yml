@@ -78,6 +78,7 @@ nav:
       - "Shadow": "general/shadow.md"
       - "Unique": "general/unique.md"
       - "Slice": "general/slice.md"
+      - "Require": "general/require.md"
       - "Ducks": "general/duck.md"
       - "Corece": "general/coerce.md"
       - "Psuedo" : "general/pseudo.md"
