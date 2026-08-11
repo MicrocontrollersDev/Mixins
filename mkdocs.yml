@@ -81,7 +81,7 @@ nav:
       - "Require": "general/require.md"
       - "Ducks": "general/duck.md"
       - "Corece": "general/coerce.md"
-      - "Psuedo" : "general/pseudo.md"
+      - "Pseudo" : "general/pseudo.md"
       - "Remap": "general/remap.md"
   - "Default Injections":
       - "Overview": "default/overview.md"

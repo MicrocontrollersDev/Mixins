@@ -18,6 +18,4 @@ You should ensure that the "package" field is properly set to your mods mixin pa
 
 IntelliJ is recommended for writing Mixins due to the Minecraft Dev (McDev) plugin. This plugin allows for autocompleting mixin targets, and MixinExtra's Expression definitions. Additionally, it can let you know when you write a mixin that uses brittle techniques, and other general goodies. Especially as a new Mixin user, it is an essential plugin to have. See the [Minecraft Dev](https://mcdev.io) website to learn how to install. I also recommend updating to the nightly release.
 
-Another useful plugin is [Mixin Visualizer](https://plugins.jetbrains.com/plugin/29218-mixin-visualizer), which should show you exactly what your Mixin is actually doing.
-
 And finally, if you are trying to Mixin into another mod's Mixin, you should the McDev addon plugin, [MixinSquared](https://plugins.jetbrains.com/plugin/26828-mixinsquared). This allows you to easily write MixinSquared Mixins.

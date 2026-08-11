@@ -4,10 +4,10 @@ When attempting to mixin into a class that may not exist at runtime, say, when y
 
 ```java
 @Pseudo
-@Mixin(targets = "com.example.mod.OtherMod")
+@Mixin(targets = "com.example.mod.OtherMod") // When using `@Pseudo` you should use targets and not a direct class reference.
 public class OtherModMixin {
     ...
 }
 ```
 
-When using `@Pseudo` you should use targets and not a direct class reference.
+Note that this will mean that if the mod changes its class package, the mixin will silently fail. If you wish to have an optional mixin that is still required if the mod is present, you should look into using a Mixin Plugin to conditionally register/deregister your mixin.
